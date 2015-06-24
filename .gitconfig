@@ -1,0 +1,18 @@
+[core]
+	editor = /usr/bin/vim
+[user]
+	name = Your Name
+	email = your-email@mail.com
+[color]
+	ui = always
+[github]
+	user = orimarti
+	token =
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	df = diff
+	br = branch
+	idx = diff --cached
+	graph = log --graph --oneline --decorate
