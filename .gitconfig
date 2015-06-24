@@ -1,5 +1,9 @@
 [core]
 	editor = /usr/bin/vim
+
+[push]
+	default = simple
+
 [user]
 	name = Your Name
 	email = your-email@mail.com
