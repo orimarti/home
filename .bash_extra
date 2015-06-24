@@ -1,0 +1,22 @@
+#!/bin/bash
+export EDITOR=vim
+export HISTSIZE=100000
+export HISTFILESIZE=200000
+export HISTTIMEFORMAT="%d/%m/%y %T "
+export HISTCONTROL=ignoreboth
+export HISTIGNORE="&:ls:[bf]g:exit:pwd:clear:\t*"
+
+# Git autocompletion
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
+# Git prompt
+if [ -f ~/.git-prompt.sh ]; then
+  . ~/.git-prompt.sh
+fi
+
+export GIT_PS1_SHOWCOLORHINTS=1
+export GIT_PS1_SHOWDIRTYSTATE=1
+export PROMPT_COMMAND='__git_ps1 "\u:\w" "\\\$ "'
+
