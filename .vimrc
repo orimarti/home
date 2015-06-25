@@ -255,3 +255,5 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
+" Pathogen module install
+execute pathogen#infect()
