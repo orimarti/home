@@ -21,6 +21,8 @@ export GIT_PS1_SHOWDIRTYSTATE=1
 export PROMPT_COMMAND='__git_ps1 "\u:\w" "\\\$ "'
 
 # Add PATH to $HOME/bin
-for dir in $(find $HOME/bin -maxdepth 1 -type d); do 
-  export PATH=$dir:$PATH;
-done
+if [[ -d $HOME/bin ]]; then
+  for dir in $(find $HOME/bin -maxdepth 1 -type d); do 
+    export PATH=$dir:$PATH;
+  done
+fi
