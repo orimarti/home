@@ -26,3 +26,6 @@ if [[ -d $HOME/bin ]]; then
     export PATH=$dir:$PATH;
   done
 fi
+
+# PROMPT_COMMAND to save the history every command
+export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; history -c; history -r"
