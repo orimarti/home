@@ -1,0 +1,14 @@
+[user]
+	email = xxxxx@xxx.com
+	name = Your Name
+[color]
+	ui = true
+[alias]
+    st = status
+	co = checkout
+	br = branch
+	ci = commit
+	ad = add
+	treelog = log --pretty=format:'%h %s [%an]' --graph
+	difflog = log --oneline -p
+	linelog = log --pretty=format:'%h %ad- %s [%an]'
