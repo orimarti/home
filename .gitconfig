@@ -14,3 +14,5 @@
 	linelog = log --pretty=format:'%h %ad- %s [%an]'
 	statlog = log --oneline --stat
 	pushall = push --recurse-submodules=on-demand
+[push]
+	default = simple
