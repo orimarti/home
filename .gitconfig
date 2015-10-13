@@ -15,6 +15,7 @@
 	statlog = log --oneline --stat
 	pushall = push --recurse-submodules=on-demand
 	s = status -s
+	lg = log --oneline --decorate --all --graph
 [push]
 	default = simple
 [pull]
