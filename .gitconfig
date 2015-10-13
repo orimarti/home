@@ -16,3 +16,5 @@
 	pushall = push --recurse-submodules=on-demand
 [push]
 	default = simple
+[pull]
+	rebase = true
